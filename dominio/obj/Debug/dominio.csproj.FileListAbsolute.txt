@@ -4,3 +4,9 @@ C:\Users\Alex\Desktop\WebPromo\PromoWeb\dominio\obj\Debug\dominio.csproj.Assembl
 C:\Users\Alex\Desktop\WebPromo\PromoWeb\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\Alex\Desktop\WebPromo\PromoWeb\dominio\obj\Debug\dominio.dll
 C:\Users\Alex\Desktop\WebPromo\PromoWeb\dominio\obj\Debug\dominio.pdb
+D:\Escritorio\Program\FACULTAD\PromoWeb\dominio\bin\Debug\dominio.dll
+D:\Escritorio\Program\FACULTAD\PromoWeb\dominio\bin\Debug\dominio.pdb
+D:\Escritorio\Program\FACULTAD\PromoWeb\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+D:\Escritorio\Program\FACULTAD\PromoWeb\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+D:\Escritorio\Program\FACULTAD\PromoWeb\dominio\obj\Debug\dominio.dll
+D:\Escritorio\Program\FACULTAD\PromoWeb\dominio\obj\Debug\dominio.pdb
