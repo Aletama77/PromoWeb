@@ -25,3 +25,12 @@ D:\Escritorio\Program\FACULTAD\PromoWeb\negocio\obj\Debug\negocio.csproj.CoreCom
 D:\Escritorio\Program\FACULTAD\PromoWeb\negocio\obj\Debug\negocio.csproj.Up2Date
 D:\Escritorio\Program\FACULTAD\PromoWeb\negocio\obj\Debug\negocio.dll
 D:\Escritorio\Program\FACULTAD\PromoWeb\negocio\obj\Debug\negocio.pdb
+C:\Users\nahue\OneDrive\Desktop\Here!\negocio\bin\Debug\negocio.dll
+C:\Users\nahue\OneDrive\Desktop\Here!\negocio\bin\Debug\negocio.pdb
+C:\Users\nahue\OneDrive\Desktop\Here!\negocio\bin\Debug\dominio.dll
+C:\Users\nahue\OneDrive\Desktop\Here!\negocio\bin\Debug\dominio.pdb
+C:\Users\nahue\OneDrive\Desktop\Here!\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\nahue\OneDrive\Desktop\Here!\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\nahue\OneDrive\Desktop\Here!\negocio\obj\Debug\negocio.csproj.Up2Date
+C:\Users\nahue\OneDrive\Desktop\Here!\negocio\obj\Debug\negocio.dll
+C:\Users\nahue\OneDrive\Desktop\Here!\negocio\obj\Debug\negocio.pdb

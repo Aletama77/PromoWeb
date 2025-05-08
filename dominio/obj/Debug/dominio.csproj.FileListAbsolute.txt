@@ -10,3 +10,9 @@ D:\Escritorio\Program\FACULTAD\PromoWeb\dominio\obj\Debug\dominio.csproj.Assembl
 D:\Escritorio\Program\FACULTAD\PromoWeb\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 D:\Escritorio\Program\FACULTAD\PromoWeb\dominio\obj\Debug\dominio.dll
 D:\Escritorio\Program\FACULTAD\PromoWeb\dominio\obj\Debug\dominio.pdb
+C:\Users\nahue\OneDrive\Desktop\Here!\dominio\bin\Debug\dominio.dll
+C:\Users\nahue\OneDrive\Desktop\Here!\dominio\bin\Debug\dominio.pdb
+C:\Users\nahue\OneDrive\Desktop\Here!\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\nahue\OneDrive\Desktop\Here!\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\nahue\OneDrive\Desktop\Here!\dominio\obj\Debug\dominio.dll
+C:\Users\nahue\OneDrive\Desktop\Here!\dominio\obj\Debug\dominio.pdb
