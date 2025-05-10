@@ -22,3 +22,9 @@ C:\Users\Alex\source\repos\PromoWeb2\dominio\obj\Debug\dominio.csproj.AssemblyRe
 C:\Users\Alex\source\repos\PromoWeb2\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\Alex\source\repos\PromoWeb2\dominio\obj\Debug\dominio.dll
 C:\Users\Alex\source\repos\PromoWeb2\dominio\obj\Debug\dominio.pdb
+C:\Users\Alex\source\repos\PromoWeb3\dominio\bin\Debug\dominio.dll
+C:\Users\Alex\source\repos\PromoWeb3\dominio\bin\Debug\dominio.pdb
+C:\Users\Alex\source\repos\PromoWeb3\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\PromoWeb3\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\PromoWeb3\dominio\obj\Debug\dominio.dll
+C:\Users\Alex\source\repos\PromoWeb3\dominio\obj\Debug\dominio.pdb

@@ -12,17 +12,17 @@
                 <!-- Imagen 1 -->
                 <div class="col-md-3 text-center">
                     <!-- Columnas más estrechas para centrar mejor -->
-                    <img src="ruta-de-tu-imagen1.jpg" alt="Descripción 1" class="img-fluid rounded shadow" />
+                    <asp:Image ID="imgLogo" runat="server" AlternateText="Logo de la empresa" />
                 </div>
 
                 <!-- Imagen 2 -->
                 <div class="col-md-3 text-center">
-                    <img src="ruta-de-tu-imagen2.jpg" alt="Descripción 2" class="img-fluid rounded shadow" />
+                    <asp:Image ID="Image1" runat="server" AlternateText="Logo de la empresa" />
                 </div>
 
                 <!-- Imagen 3 -->
                 <div class="col-md-3 text-center">
-                    <img src="ruta-de-tu-imagen3.jpg" alt="Descripción 3" class="img-fluid rounded shadow" />
+                    <asp:Image ID="Image2" runat="server" AlternateText="Logo de la empresa" />
                 </div>
             </div>
         </div>

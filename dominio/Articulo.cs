@@ -12,7 +12,7 @@ namespace dominio
         public String Nombre { get; set; }
         public String Descripcion { get; set; }
         public float Precio { get; set; }
-        public int UrlImagen { get; set; }
+        public String UrlImagen { get; set; }
 
     }
 }

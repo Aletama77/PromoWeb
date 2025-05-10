@@ -43,3 +43,12 @@ C:\Users\Alex\source\repos\PromoWeb2\negocio\obj\Debug\negocio.csproj.CoreCompil
 C:\Users\Alex\source\repos\PromoWeb2\negocio\obj\Debug\negocio.csproj.Up2Date
 C:\Users\Alex\source\repos\PromoWeb2\negocio\obj\Debug\negocio.dll
 C:\Users\Alex\source\repos\PromoWeb2\negocio\obj\Debug\negocio.pdb
+C:\Users\Alex\source\repos\PromoWeb3\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Alex\source\repos\PromoWeb3\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Alex\source\repos\PromoWeb3\negocio\obj\Debug\negocio.dll
+C:\Users\Alex\source\repos\PromoWeb3\negocio\obj\Debug\negocio.pdb
+C:\Users\Alex\source\repos\PromoWeb3\negocio\bin\Debug\negocio.dll
+C:\Users\Alex\source\repos\PromoWeb3\negocio\bin\Debug\negocio.pdb
+C:\Users\Alex\source\repos\PromoWeb3\negocio\bin\Debug\dominio.dll
+C:\Users\Alex\source\repos\PromoWeb3\negocio\bin\Debug\dominio.pdb
+C:\Users\Alex\source\repos\PromoWeb3\negocio\obj\Debug\negocio.csproj.Up2Date
