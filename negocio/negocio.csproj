@@ -45,6 +45,7 @@
     <Compile Include="ArticuloNegocio.cs" />
     <Compile Include="ConfirmacionNegocio.cs" />
     <Compile Include="DatosPersonalesNegocio.cs" />
+    <Compile Include="ImagenNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeleccionarPremioNegocio.cs" />
     <Compile Include="VoucherNegocio.cs" />

@@ -41,7 +41,9 @@ namespace WebPromo6b
 
                     if(voucherDisponible == true)
                     {
-                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('VOUCHER APLICADO');", true);
+                        
+                        //ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('VOUCHER APLICADO');", true);
+                        Response.Redirect("SeleccionPremio.aspx");
                     }
                     else
                     {
