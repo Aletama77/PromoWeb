@@ -19,7 +19,9 @@ namespace negocio
 
         public AccesoDatos()
         {
-            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true"); //falta agregar cadena de conexion
+            conexion = new SqlConnection("server=DESKTOP-SMALGP3; database=PROMOS_DB; integrated security=true");
+            // conexion = new SqlConnection("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true"); //falta agregar cadena de conexion
+            // conexion = new SqlConnection("server=DESKTOP-SMALGP3; database=PROMOS_DB; integrated security=true") // a vitto le anda asi nada mas, sin sqlexpress
             comando = new SqlCommand();
         }
 
@@ -46,6 +48,26 @@ namespace negocio
             {
 
                 throw ex;
+            }
+        }
+
+        public int ejecutarAccion()
+        {
+            // agrego metodo para las creaciones
+            comando.Connection = conexion;
+            try
+            {
+                conexion.Open();
+                return comando.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                if (conexion != null && conexion.State == System.Data.ConnectionState.Open)
+                    conexion.Close();
             }
         }
 
