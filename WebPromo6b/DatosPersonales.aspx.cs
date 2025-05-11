@@ -41,7 +41,6 @@ namespace WebPromo6b
                     return;
                 }
 
-
                 Cliente nuevoCliente = new Cliente
                 {
                     Documento = txtDNI.Text,
@@ -54,15 +53,21 @@ namespace WebPromo6b
                 };
 
                 DatosPersonalesNegocio negocio = new DatosPersonalesNegocio();
-                bool registrado = negocio.RegistrarCliente(nuevoCliente);
-
-                Debug.WriteLine("Cliente registrado: " + registrado);
+                bool registrado = negocio.RegistrarCliente(nuevoCliente); // cuando registro el cliente, mi nuevoCliente obtiene la propiedad de ID (ver DatosPersonalesNegocio.cs)
 
                 if (registrado)
                 {
-                    Session["NombreGanador"] = nuevoCliente.Nombre;
-                    Response.Redirect("Confirmacion.aspx");
-                    //ScriptManager.RegisterStartupScript(this, GetType(), "alertExito", "alert('Cliente registrado correctamente.');", true);
+                    Session["IdClienteGanador"] = nuevoCliente.Id;
+                    bool voucherTomado = negocio.MarcarVoucherComoTomadoPorCliente((string)Session["VoucherSeleccionado"], nuevoCliente.Id, DateTime.Now.ToString(), (int)Session["PremioSeleccionado"]);
+
+                    if (voucherTomado)
+                    {
+                        Response.Redirect("Confirmacion.aspx");
+                    }
+                    else
+                    {
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('No se pudo tomar el voucher. Por favor, intente nuevamente.');", true);
+                    }
                 }
                 else
                 {
