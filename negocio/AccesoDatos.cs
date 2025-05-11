@@ -20,8 +20,8 @@ namespace negocio
 
         public AccesoDatos()
         {
-            //conexion = new SqlConnection("server=DESKTOP-SMALGP3; database=PROMOS_DB; integrated security=true");
-            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true"); //falta agregar cadena de conexion
+            conexion = new SqlConnection("server=DESKTOP-SMALGP3; database=PROMOS_DB; integrated security=true");
+            // conexion = new SqlConnection("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true"); //falta agregar cadena de conexion
             // conexion = new SqlConnection("server=DESKTOP-SMALGP3; database=PROMOS_DB; integrated security=true") // a vitto le anda asi nada mas, sin sqlexpress
             comando = new SqlCommand();
         }
@@ -67,21 +67,33 @@ namespace negocio
             }
             finally
             {
-                if (conexion != null && conexion.State == System.Data.ConnectionState.Open)
-                    conexion.Close();
+                if (conexion != null && conexion.State == System.Data.ConnectionState.Open) conexion.Close();
+            }
+        }
+
+        public object ejecutarConsultaScalar()
+        {
+            comando.Connection = conexion;
+            try
+            {
+                conexion.Open();
+                return comando.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Error al ejecutar consulta scalar: " + ex.ToString());
+                return null;
+            }
+            finally
+            {
+                if (conexion != null && conexion.State == System.Data.ConnectionState.Open) conexion.Close();
             }
         }
 
         public void cerrarConexion()
         {
-            if (lector != null)
-            {
-                lector.Close();
-            }
-            if (conexion != null && conexion.State == System.Data.ConnectionState.Open)
-            {
-                conexion.Close();
-            }
+            if (lector != null) lector.Close();
+            if (conexion != null && conexion.State == System.Data.ConnectionState.Open) conexion.Close();
         }
     }
 }

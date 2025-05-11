@@ -24,7 +24,7 @@ namespace negocio
                     aux.Codigo = (String)datos.Lector["Codigo"];
                     aux.Nombre = (String)datos.Lector["Nombre"];
                     aux.Descripcion = (String)datos.Lector["Descripcion"];
-                    aux.Precio = (float)datos.Lector["Precio"];
+                    aux.Precio = (decimal)datos.Lector["Precio"];
                     aux.UrlImagen = (String)datos.Lector["UrlImagen"];
                     lista.Add(aux);
                 }
