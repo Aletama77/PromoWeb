@@ -28,7 +28,7 @@ namespace WebPromo6b
                         Articulo articulo2 = listaArticulos[3];
                         Articulo articulo3 = listaArticulos[7];
 
-                        // Asignamos imágenes
+                        // imágenes
                         imgPremio1.ImageUrl = articulo1.UrlImagen;
                         imgPremio2.ImageUrl = articulo2.UrlImagen;
                         imgPremio3.ImageUrl = articulo3.UrlImagen;
@@ -38,7 +38,7 @@ namespace WebPromo6b
                         lblNombre2.Text = articulo2.Nombre;
                         lblNombre3.Text = articulo3.Nombre;
 
-                        // Asignamos descripciones
+                        // descripciones
                         lblDescripcion1.Text = articulo1.Descripcion;
                         lblDescripcion2.Text = articulo2.Descripcion;
                         lblDescripcion3.Text = articulo3.Descripcion;
@@ -46,7 +46,7 @@ namespace WebPromo6b
                 }
                 catch (Exception ex)
                 {
-                    // Manejar el error adecuadamente
+             
                     Session["Error"] = ex.Message;
                     Response.Redirect("Error.aspx");
                 }
@@ -55,21 +55,21 @@ namespace WebPromo6b
 
         protected void imgPremio1_Click(object sender, ImageClickEventArgs e)
         {
-            // Acción al hacer clic en el primer premio
+
             Session["PremioSeleccionado"] = 1; // Guardar el ID del premio
             Response.Redirect("DatosPersonales.aspx");
         }
 
         protected void imgPremio2_Click(object sender, ImageClickEventArgs e)
         {
-            // Acción al hacer clic en el segundo premio
+
             Session["PremioSeleccionado"] = 2;
             Response.Redirect("DatosPersonales.aspx");
         }
 
         protected void imgPremio3_Click(object sender, ImageClickEventArgs e)
         {
-            // Acción al hacer clic en el tercer premio
+
             Session["PremioSeleccionado"] = 3;
             Response.Redirect("DatosPersonales.aspx");
         }

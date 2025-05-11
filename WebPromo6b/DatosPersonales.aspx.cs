@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using negocio;
 using dominio;
+using System.Diagnostics;
 
 namespace WebPromo6b
 {
@@ -15,22 +16,31 @@ namespace WebPromo6b
 
         protected void btnEnviar_Click(object sender, EventArgs e)
         {
+   
             try
             {
                 if (
                     string.IsNullOrEmpty(txtNombre.Text) ||
                     string.IsNullOrEmpty(txtApellido.Text) ||
                     string.IsNullOrEmpty(txtEmail.Text) ||
-                    string.IsNullOrEmpty(txtTelefono.Text) ||
                     string.IsNullOrEmpty(txtDireccion.Text) ||
                     string.IsNullOrEmpty(txtCiudad.Text) ||
                     string.IsNullOrEmpty(txtCodigoPostal.Text) ||
                     string.IsNullOrEmpty(txtDNI.Text)
                 )
                 {
-                    ScriptManager.RegisterStartupScript(this, GetType(), "alertCampos", "alert('Por favor complete todos los campos requeridos.');", true);
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('Por favor complete todos los campos requeridos.');", true);
+
                     return;
                 }
+
+                int codigoPostal;
+                if (!int.TryParse(txtCodigoPostal.Text, out codigoPostal))
+                {
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alert", "alert('Código Postal inválido. Debe ser un número.');", true);
+                    return;
+                }
+
 
                 Cliente nuevoCliente = new Cliente
                 {
@@ -40,25 +50,28 @@ namespace WebPromo6b
                     Email = txtEmail.Text,
                     Direccion = txtDireccion.Text,
                     Ciudad = txtCiudad.Text,
-                    CodigoPostal = txtCodigoPostal.Text,
-                    Telefono = txtTelefono.Text
+                    CP = codigoPostal                  
                 };
 
                 DatosPersonalesNegocio negocio = new DatosPersonalesNegocio();
                 bool registrado = negocio.RegistrarCliente(nuevoCliente);
 
+                Debug.WriteLine("Cliente registrado: " + registrado);
+
                 if (registrado)
                 {
-                    ScriptManager.RegisterStartupScript(this, GetType(), "alertExito", "alert('Cliente registrado correctamente.');", true);
+                    Session["NombreGanador"] = nuevoCliente.Nombre;
+                    Response.Redirect("Confirmacion.aspx");
+                    //ScriptManager.RegisterStartupScript(this, GetType(), "alertExito", "alert('Cliente registrado correctamente.');", true);
                 }
                 else
                 {
-                    ScriptManager.RegisterStartupScript(this, GetType(), "alertError", "alert('No se pudo registrar el cliente. Por favor, intente nuevamente.');", true);
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('No se pudo registrar el cliente. Por favor, intente nuevamente.');", true);
                 }
             }
             catch (Exception ex)
             {
-                ScriptManager.RegisterStartupScript(this, GetType(), "alertException", $"alert('Ha ocurrido un error: {ex.Message}');", true);
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", $"alert('Error: {ex.Message}');", true);
             }
         }
     }

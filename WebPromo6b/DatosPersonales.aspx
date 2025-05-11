@@ -52,13 +52,6 @@
                                         <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control form-control-lg" placeholder="nombre@ejemplo.com" required="true" TextMode="Email"></asp:TextBox>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="txtTelefono" class="form-label">Teléfono</label>
-                                    <div class="input-group">
-                                        <span class="input-group-text"><i class="bi bi-telephone"></i>Nro</span>
-                                        <asp:TextBox ID="txtTelefono" runat="server" CssClass="form-control form-control-lg" placeholder="(+54 11) XXXX-XXXX" required="true" TextMode="Phone"></asp:TextBox>
-                                    </div>
-                                </div>
                             </div>
                             
                             <hr class="my-4">

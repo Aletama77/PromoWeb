@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using dominio;
 using System.Data;
+using System.Diagnostics;
 
 namespace negocio
 {
@@ -15,7 +16,7 @@ namespace negocio
         {
             try
             {
-                string consulta = "INSERT INTO CLIENTES (Documento, Nombre, Apellido, Email, Direccion, Ciudad, CP, Telefono) VALUES (@Documento, @Nombre, @Apellido, @Email, @Direccion, @Ciudad, @CP, @Telefono)";
+                string consulta = "INSERT INTO CLIENTES (Documento, Nombre, Apellido, Email, Direccion, Ciudad, CP) VALUES (@Documento, @Nombre, @Apellido, @Email, @Direccion, @Ciudad, @CP)";
 
                 baseDeDatos.setearConsulta(consulta);
 
@@ -25,16 +26,19 @@ namespace negocio
                 baseDeDatos.setearParametro("@Email", cliente.Email);
                 baseDeDatos.setearParametro("@Direccion", cliente.Direccion);
                 baseDeDatos.setearParametro("@Ciudad", cliente.Ciudad);
-                baseDeDatos.setearParametro("@CP", cliente.CodigoPostal);
-                baseDeDatos.setearParametro("@Telefono", cliente.Telefono);
+                baseDeDatos.setearParametro("@CP", cliente.CP);
+                
 
                 int filasAfectadas = baseDeDatos.ejecutarAccion();
+                Debug.WriteLine("Filas afectadas: " + filasAfectadas);
 
                 return filasAfectadas > 0;
             }
             catch (Exception ex)
             {
-                throw ex;
+                Debug.WriteLine("Error al registrar cliente: " + ex.ToString());
+                Debug.WriteLine($"Documento: {cliente.Documento}, Nombre: {cliente.Nombre}, Email: {cliente.Email}");
+                return false;
             }
             finally
             {

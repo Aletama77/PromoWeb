@@ -43,7 +43,7 @@ namespace WebPromo6b
                     {
 
                         //ScriptManager.RegisterStartupScript(this, this.GetType(), "alert", "alert('VOUCHER APLICADO');", true);
-                        //Session["VoucherSeleccionado"] = 2;
+                        Session["VoucherSeleccionado"] = CodigoVoucher;
                         Response.Redirect("SeleccionPremio.aspx");
                     }
                     else

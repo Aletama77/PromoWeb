@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace negocio
 {
@@ -19,8 +20,8 @@ namespace negocio
 
         public AccesoDatos()
         {
-            conexion = new SqlConnection("server=DESKTOP-SMALGP3; database=PROMOS_DB; integrated security=true");
-            // conexion = new SqlConnection("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true"); //falta agregar cadena de conexion
+            //conexion = new SqlConnection("server=DESKTOP-SMALGP3; database=PROMOS_DB; integrated security=true");
+            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true"); //falta agregar cadena de conexion
             // conexion = new SqlConnection("server=DESKTOP-SMALGP3; database=PROMOS_DB; integrated security=true") // a vitto le anda asi nada mas, sin sqlexpress
             comando = new SqlCommand();
         }
@@ -62,7 +63,7 @@ namespace negocio
             }
             catch (Exception ex)
             {
-                throw ex;
+                return 0;
             }
             finally
             {

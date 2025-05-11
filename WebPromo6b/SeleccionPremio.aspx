@@ -5,7 +5,7 @@
         <h1 class="text-center mb-5 display-4 fw-bold">Elegí tu premio</h1>
 
         <div class="row g-4 justify-content-center">
-            <!-- Premio 1 -->
+            
             <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <div class="bg-light p-4 d-flex align-items-center justify-content-center" style="height: 200px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
@@ -23,7 +23,6 @@
                 </div>
             </div>
 
-            <!-- Premio 2 -->
             <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <div class="bg-light p-4 d-flex align-items-center justify-content-center" style="height: 200px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
@@ -40,7 +39,6 @@
                 </div>
             </div>
 
-            <!-- Premio 3 -->
             <div class="col-xl-4 col-lg-6 col-md-6">
                 <div class="card h-100 border-0 shadow-sm" style="border-radius: 15px;">
                     <div class="bg-light p-4 d-flex align-items-center justify-content-center" style="height: 200px; border-top-left-radius: 15px; border-top-right-radius: 15px;">
