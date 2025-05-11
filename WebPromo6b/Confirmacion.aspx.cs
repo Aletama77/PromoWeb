@@ -84,11 +84,12 @@ namespace WebPromo6b
                 if (!string.IsNullOrEmpty(codigoVoucher) && !string.IsNullOrEmpty(clienteGanador.Nombre))
                 {
                     lblMensaje.Text = $"VOUCHER GANADOR ({codigoVoucher}). <br/>¡¡FELICITACIONES {clienteGanador.Nombre.ToUpper()}!!";
+                    lblMensaje.CssClass = "text-black";
                 }
                 else
                 {
                     lblMensaje.Text = "No se encontraron los datos del ganador.";
-                    lblMensaje.CssClass = "text-warning";
+                    lblMensaje.CssClass = "text-black";
                 }
             }
         }

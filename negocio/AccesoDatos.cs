@@ -20,8 +20,8 @@ namespace negocio
 
         public AccesoDatos()
         {
-            conexion = new SqlConnection("server=DESKTOP-SMALGP3; database=PROMOS_DB; integrated security=true");
-            // conexion = new SqlConnection("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true"); //falta agregar cadena de conexion
+            // conexion = new SqlConnection("server=DESKTOP-SMALGP3; database=PROMOS_DB; integrated security=true");
+            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=PROMOS_DB; integrated security=true"); //falta agregar cadena de conexion
             // conexion = new SqlConnection("server=DESKTOP-SMALGP3; database=PROMOS_DB; integrated security=true") // a vitto le anda asi nada mas, sin sqlexpress
             comando = new SqlCommand();
         }

@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="Confirmacion" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Confirmacion.aspx.cs" Inherits="WebPromo6b.Confirmacion" %>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-lg-10 col-md-12">
@@ -19,7 +20,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mb-4">
-                                    <div class="card-header bg-success text-white">
+                                    <div class="card-header" style="background-color: black; color: white;">
                                         <h5 class="mb-0">Sus Productos</h5>
                                     </div>
                                     <div class="card-body">
@@ -51,9 +52,10 @@
                         </div>
                         
                         <div class="card mb-4">
-                            <div class="card-header bg-primary text-white">
+                            <div class="card-header" style="background-color: black; color: white;">
                                 <h5 class="mb-0">Datos de Envío</h5>
                             </div>
+                        </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
@@ -98,9 +100,10 @@
                             <p class="mb-3">
                                 <i class="bi bi-check-circle-fill me-2"></i>Se ha enviado un correo de confirmación a su dirección de email
                             </p>
-                            <asp:Button ID="btnVolver" runat="server" Text="Finalizar" 
-                                        CssClass="btn btn-success text-white shadow-sm p-2 px-4 fs-4" 
-                                        OnClick="btnVolver_Click" />
+                        <asp:Button ID="btnVolver" runat="server" Text="Finalizar"  
+                                    CssClass="btn text-white shadow-sm p-2 px-4 fs-4"  
+                                    style="background-color: black; color: white; border: 1px solid white;"  
+                                    OnClick="btnVolver_Click" />
                         </div>
                     </div>
                 </div>
